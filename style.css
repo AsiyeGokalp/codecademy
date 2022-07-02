@@ -7,12 +7,12 @@
 
 html{
   font-size: 62.5%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 body{
-  background: rgb(245, 229, 215);
+  background: rgba(245, 229, 215, 0.752);
 }
 
 
@@ -31,12 +31,6 @@ body{
 }
 
 
-.logo{
-flex: 1;
-float: right;
-padding-left: 20px;
-}
-
 
 .logo-img{
 height: 25px;
@@ -46,7 +40,7 @@ height: 25px;
 
 
 .nav-bar{
-flex: 7;
+flex: 2;
 float: left;
 }
 
@@ -92,8 +86,9 @@ width: 180px;
 
 .nav-bar li a{
 text-decoration: none;
-color: black;
-font-size: 17px;
+color: rgb(69, 64, 64);
+font-size: 14px;
+margin-right: 5px;
 }
 
 
@@ -109,9 +104,9 @@ font-size: 17px;
 
 .logo-icon{
 flex: 1;
-float: right;
 display: flex;
-justify-content: row;
+justify-content: flex-end;
+margin: 5px 10px;
 
 
 }
@@ -148,22 +143,24 @@ justify-content: row;
   width: 100%;
   height: auto;
   display: flex;
-  padding: 20px;
-  margin: 0px auto;
+  padding:0 50px;
+  margin: 0px 50px;
   flex-direction: row;
 }
 
 
 
 .first-col{
+  align-items: center;
   flex: 1;
-  padding: 20px auto;
-  margin: 20px auto;
+  padding: 20px  ;
+  margin: 20px 20px 10px 20px;
 }
 
 
 .col-container{
-  width: 500px;
+  width:50rem;
+  
 }
 
 
@@ -194,19 +191,26 @@ justify-content: row;
 
 .second-col{
   flex: 1;
-  padding: 10px;
-  margin: 10px 80px;
+  padding: 2% 4%;
+  margin: 2% 4%;
   text-align: start;
+  align-items: flex-start;
   
+}
+ 
+
+.second-col-container{
+  width: 100%;
+  margin: 2% 10% 2% 2%;
 }
 
 
-
 .second-col h2{
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   line-height: 45px;
-  margin: auto 0;
-  width: 450px;
+  margin: auto 30px auto 0;
+  width: 35rem;
+  font-weight: 600;
 }
 
 
@@ -223,14 +227,21 @@ form div{
 
 form div label{
   float: left;
-  margin-bottom: 10px;
-  font-size: 17px;
+  margin: 0 30px 0px 0;
+  font-size: 16px;
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  
 }
 
 
 form div label img{
-  position: relative;
-  right: -350px;
+  float: right;
+  padding: 5px;
+
+  
 }
  
 
@@ -254,7 +265,8 @@ form div label img{
   line-height: 30px;
   z-index: 1;
   border: #606262 solid 1px;
-  top: -14px;
+  top: -10px;
+  right: 30px;
 }
 
 
@@ -296,7 +308,7 @@ form div label img{
 
 
 form div input{
-  width:450px;
+  width:35rem;
   height: 45px;
   background: white;
   border: 1px solid #5e5c5c;;
@@ -343,7 +355,8 @@ small{
   font-weight: 400;
   color: #5e5c5c;
   line-height: 20px;
-  margin:20px 0px;
+  margin:2% 4% 2% 0;
+
 }
 
 
@@ -373,7 +386,7 @@ h4{
 
 .second-page-container{
   display: grid;
-  width: 100%;
+  width: 90%;
   margin: 50px auto;
   padding: 20px;
   height: auto;
@@ -427,15 +440,16 @@ margin-bottom: 50px;
   display: grid;
   grid-template-areas: "box1 box2"
                         "box3 box4";
-  padding: 20px;
-  margin: 20px auto;
+  padding: 50px;
+  margin:  auto;
   position: relative;
+  width: 100%;
 }
 
 
 .fourth-col div{
   width: 25rem;
-  height: 170px;
+  height: 20rem;
   border: 1px solid black;
   background: white;
   margin: 30px;
@@ -531,7 +545,7 @@ margin: 10px 0;
 
 
 .fifth-col{
-  grid-column: 1/3;
+  grid-column: 1/2;
   margin:30px ;
   width: 70%;
   padding-left: 50px;
@@ -544,14 +558,15 @@ margin: 10px 0;
 .fifth-col .box-container{
   display: grid;
   width: 100%;
+  margin: 30px auto;
   
 }
 
 
 
 .br{
-  border: .2px solid rgb(151, 151, 130);
-  height: 60px;
+  border: .2px solid rgba(246, 246, 181, 0.17);
+  height: 50px;
   color: white;
   font-size: 18px;
 
@@ -568,7 +583,7 @@ margin: 10px 0;
 
 
  .box5 img{
-  padding: 10px;
+  padding: 5px;
   background:midnightblue ;
   margin: 5px;
  }
@@ -605,7 +620,7 @@ margin: 10px 0;
   padding:10px 30px;
   overflow-x: scroll;
   color: rgb(223, 204, 204);
-  width: 330px;
+  width: 300px;
 } 
 
 
@@ -635,7 +650,7 @@ margin: 10px 0;
   height: 300px;
   background: rgba(16, 1, 1, 0.57);
   padding: 0px 100px 20px 10px;
-  width: 330px;
+  width: 300px;
 } 
 
 
@@ -678,10 +693,10 @@ margin: 10px 0;
 
 
 .sixth-col{
-  grid-column: 3/5;
+  grid-column: 2/3;
   text-align: start;
-  margin: 50px;
-  padding: 30px;
+  margin: 50px 3%;
+  padding: 30px 3%;
   color: white;
 }
 
@@ -714,8 +729,8 @@ margin: 10px 0;
   background: transparent;
   border:2px solid  rgb(248, 216, 8);
   color: rgb(248, 216, 8);
-  padding: 10px 20px;
-  margin:10px 5px;
+  padding: 10px;
+  margin:10px auto;
   cursor: pointer;
 }
 
@@ -726,7 +741,7 @@ margin: 10px 0;
   background: transparent;
   border:none;
   color:  rgb(248, 216, 8);
-  padding: 10px 15px;
+  padding: 10px ;
  
 }
 /*------fourth page-----*/
@@ -990,8 +1005,12 @@ padding: 100px;
 
 
 
+.eleventh-col img{
+  width:100%;
+}
+
   .twelveth-col{
-    flex: 2;
+    flex: 1;
     margin:50px auto ;
     text-align: start;
     color: white;
@@ -1146,6 +1165,32 @@ footer .fa{
 }
 
 
+.logo{
+  visibility: visible;
+}
+
+
+.third-col{
+  grid-column: 1/3;
+}
+
+
+.fourth-col{
+  grid-column: 3/4;
+}
+
+
+
+.fourth-col div{
+  width: 20rem;}
+
+
+
+  .third-page-container{
+
+    width: 100%;
+  }
+
 
 .fifth-col{
   grid-column: 1/2;
@@ -1154,9 +1199,41 @@ footer .fa{
 
 .sixth-col{
   grid-column: 2/5;
-  margin: 0px;
+  margin-top: 50px;
   padding: 0px;
 }
+
+
+.sixth-col h1{
+  font-size: 3.5rem;
+}
+
+
+.sixth-col .btnm{
+  font-size: 13px;
+  padding: 5px;
+}
+
+.box8,.box9{ 
+  width: 280px,
+}
+
+
+.seventh-col{
+  margin: 0px 30px;
+  padding: 30px;
+}
+
+
+
+ .nineth-col h1{
+  font-size: 3.8rem;
+ }
+
+
+ .nineth-col h5{
+  font-size: 1.5rem;
+ }
 
 
 
@@ -1187,10 +1264,12 @@ footer .fa{
 
 .seventh-col{
   flex: 2;
-  margin: 0px 50px;
-  padding: 50px;
+  margin:50px 10px;
+  padding:50px 10px;
 }
-
+.seventh-col h1{
+  font-size: 3.5rem;
+}
 
 
 
@@ -1205,6 +1284,16 @@ footer .fa{
   grid-row: 2/3;
 }
 
+
+.dot-img{
+  height:70% ;
+  top: -280px;
+}
+
+.row1 .explore{
+  right: 40px;
+  top: 0px;
+}
 
 footer .first-ul{
   flex-wrap: wrap;
@@ -1272,6 +1361,7 @@ footer .first-ul >li{
 
 
 @media screen and (max-width:768px){
+  
   .third-page{
     display: none;
   }
@@ -1285,15 +1375,67 @@ footer .first-ul >li{
 
   .container{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
   }
 
-
+.first-col{
+  align-items: flex-start;
+  
+}
 
   .second-col{
-    width: 80%;
+    margin-left: 100px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
   }
 
+  .col-container{
+    margin: auto;
+  }
+  .third-col h2{
+    font-size:18px;
+    padding: 10px 0;
+  
+  }
+
+
+
+  .fourth-col{
+   
+    grid-template-areas: "box1"
+                         "box2"
+                         "box3"
+                         "box4";
+   width:53rem;
+   padding: 0px;
+   margin: 0px;
+  }
+  .fourth-col div{
+    width: 100%;
+    margin: 20px 0px;
+    height: 17rem;
+    
+  }
+.backimg{
+  width: 100%;
+  padding: 0px;
+}
+
+.fourth-col div small{
+  background: rgba(243, 200, 208, 0.393);
+  padding: 2px 5px;
+  right: 0px;
+  margin: 0px;
+}
+
+.browse{
+  font-size:16px ;
+  bottom: 50px;
+  right: 470px;
+}
 
 
   .fifth-col{
@@ -1307,7 +1449,7 @@ footer .first-ul >li{
 
 
   .elevent-col-img{
-  background-image: url(/img/girl.png);
+  background-image: url(/img/girl.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover ;
@@ -1370,8 +1512,23 @@ footer .first-ul >li{
 
 
 .dot-img{
-  display: none;
+  height:20% ;
+  top: -220px;
 }
+
+
+.row1 .explore{
+  right: 180px;
+  top: 2950px;
+  font-size: 3rem;
+}
+
+
+.row1 .explore p{
+ 
+  font-size: 2rem;
+}
+
 
 
 .nineth-col h1{
@@ -1393,5 +1550,10 @@ footer .first-ul> li{
   bottom: 850px;
  
 }
+
+.nav a,.nav small {
+  font-size: 10px;
+}
+
 
 }}
