@@ -1361,6 +1361,9 @@ footer .first-ul >li{
 
 
 @media screen and (max-width:768px){
+  body{
+    width: 100%;
+  }
   
   .third-page{
     display: none;
@@ -1449,7 +1452,7 @@ footer .first-ul >li{
 
 
   .elevent-col-img{
-  background-image: url(/img/girl.webp);
+  background-image: url(/img/girl.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover ;
@@ -1517,11 +1520,7 @@ footer .first-ul >li{
 }
 
 
-.row1 .explore{
-  right: 180px;
-  top: 2950px;
-  font-size: 3rem;
-}
+
 
 
 .row1 .explore p{
